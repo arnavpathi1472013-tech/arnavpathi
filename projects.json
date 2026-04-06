@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "owner": "Arnav Pathi",
+    "handle": "arnavpathi1472013-tech",
+    "role": "Full-Stack Developer · IoT Engineer · Security Researcher",
+    "location": "India",
+    "status": "active",
+    "github": "https://github.com/arnavpathi1472013-tech",
+    "email": "arnav@example.com",
+    "hackerone": "https://hackerone.com/arnavpathi",
+    "tagline": "Building the Web. Engineering the Physical. Securing the Future."
+  },
+
+  "web": [
+    {
+      "id": "web-001",
+      "title": "Engineering Dashboard UI",
+      "description": "A dynamic, JSON-driven portfolio shell built entirely with vanilla JavaScript and modern CSS. Zero frameworks. Infinite scalability through a single data file.",
+      "tags": ["HTML5", "CSS3", "ES6+", "Fetch API", "CSS Grid"],
+      "status": "live",
+      "statusLabel": "Live",
+      "accent": "emerald",
+      "icon": "⬡",
+      "year": "2026",
+      "link": "#"
+    },
+    {
+      "id": "web-002",
+      "title": "Responsive Component Library",
+      "description": "A handcrafted collection of accessible, zero-dependency UI components built with semantic HTML and modern CSS custom properties. Documented with live previews.",
+      "tags": ["Semantic HTML", "CSS Variables", "Flexbox", "ARIA", "Web Components"],
+      "status": "live",
+      "statusLabel": "Live",
+      "accent": "emerald",
+      "icon": "◈",
+      "year": "2026",
+      "link": "#"
+    },
+    {
+      "id": "web-003",
+      "title": "Real-time Data Visualizer",
+      "description": "Client-side data visualization engine that consumes live sensor feeds from ESP32 nodes over WebSockets. Renders live charts using the Canvas API — no charting library required.",
+      "tags": ["WebSocket", "Canvas API", "JavaScript", "JSON", "REST"],
+      "status": "building",
+      "statusLabel": "In Progress",
+      "accent": "amber",
+      "icon": "◎",
+      "year": "2026",
+      "link": "#"
+    }
+  ],
+
+  "iot": [
+    {
+      "id": "iot-001",
+      "title": "Smart Home Control Node",
+      "description": "ESP32-based web server exposing a clean REST API for GPIO control. A single-page interface enables toggle of relays, dimmers, and IR blasters from any device on the local network.",
+      "hardware": ["ESP32-WROOM-32", "4-Ch Relay Module", "IR Blaster", "5V PSU"],
+      "protocols": ["HTTP", "mDNS", "WiFi 802.11n"],
+      "firmware": "C++ / Arduino IDE",
+      "status": "deployed",
+      "statusLabel": "Deployed",
+      "icon": "🏠",
+      "metrics": { "label": "Uptime", "value": "99.2%" },
+      "year": "2026"
+    },
+    {
+      "id": "iot-002",
+      "title": "Environmental Monitor",
+      "description": "DHT22 sensor node feeding real-time temperature and humidity to a 16×2 I2C LCD display. Data is also pushed to a lightweight HTTP endpoint for web dashboard integration.",
+      "hardware": ["ESP32", "DHT22 Sensor", "16x2 I2C LCD", "3.3V Regulator"],
+      "protocols": ["I2C", "HTTP POST", "WiFi"],
+      "firmware": "C++ / Arduino IDE",
+      "status": "deployed",
+      "statusLabel": "Deployed",
+      "icon": "📡",
+      "metrics": { "label": "Poll Rate", "value": "1 Hz" },
+      "year": "2026"
+    },
+    {
+      "id": "iot-003",
+      "title": "Motion Automation System",
+      "description": "PIR-triggered relay automation with configurable hold-time logic baked into firmware. SPI-connected LCD shows occupancy state. Fully standalone — no internet required.",
+      "hardware": ["ESP32", "HC-SR501 PIR", "SPI LCD", "Relay Module"],
+      "protocols": ["SPI", "GPIO Interrupt", "UART Debug"],
+      "firmware": "C++ / Arduino IDE",
+      "status": "deployed",
+      "statusLabel": "Deployed",
+      "icon": "⚡",
+      "metrics": { "label": "Trigger Latency", "value": "<80ms" },
+      "year": "2026"
+    },
+    {
+      "id": "iot-004",
+      "title": "Multi-Sensor Data Logger",
+      "description": "Concurrent multi-sensor aggregation node logging DHT, BMP280 (pressure/altitude), and soil moisture readings to a microSD card via SPI. Timestamped CSV output for analysis.",
+      "hardware": ["ESP32", "BMP280", "DHT11", "Soil Sensor", "MicroSD Module"],
+      "protocols": ["SPI", "I2C", "UART"],
+      "firmware": "C++ / Arduino IDE",
+      "status": "building",
+      "statusLabel": "In Progress",
+      "icon": "💾",
+      "metrics": { "label": "Sensors", "value": "4 Active" },
+      "year": "2026"
+    }
+  ],
+
+  "security": [
+    {
+      "id": "sec-001",
+      "title": "Broken Access Control — IDOR",
+      "platform": "HackerOne — Public Program",
+      "description": "Identified an Insecure Direct Object Reference allowing enumeration of private user resources by incrementing integer IDs in API responses. Verified with two distinct test accounts.",
+      "category": "Access Control",
+      "severity": "Medium",
+      "severityLevel": 2,
+      "status": "disclosed",
+      "statusLabel": "Disclosed",
+      "method": "Manual Testing · Burp Suite · DevTools",
+      "year": "2026"
+    },
+    {
+      "id": "sec-002",
+      "title": "Client-Side Logic Bypass",
+      "platform": "Hacker101 CTF",
+      "description": "Exploited a JavaScript-enforced feature gate that performed no server-side validation. Removing the front-end guard via DevTools console unlocked premium functionality without authorization.",
+      "category": "Front-End Logic",
+      "severity": "Low",
+      "severityLevel": 1,
+      "status": "ctf",
+      "statusLabel": "CTF Flag",
+      "method": "Browser DevTools · JS Source Analysis",
+      "year": "2026"
+    },
+    {
+      "id": "sec-003",
+      "title": "Reflected XSS via Search Parameter",
+      "platform": "Hacker101 CTF",
+      "description": "Unsanitized query string parameter reflected into the DOM without encoding. Crafted a payload that executes arbitrary script in victim context. Confirmed via alert() and cookie theft PoC.",
+      "category": "Injection",
+      "severity": "Medium",
+      "severityLevel": 2,
+      "status": "ctf",
+      "statusLabel": "CTF Flag",
+      "method": "Manual Fuzzing · Payload Crafting · DevTools",
+      "year": "2026"
+    },
+    {
+      "id": "sec-004",
+      "title": "Multi-Step Flow Manipulation",
+      "platform": "HackerOne — Public Program",
+      "description": "Discovered that a payment flow could be resumed at step 3 without completing steps 1 and 2, bypassing mandatory verification. Application accepted a forged completion token.",
+      "category": "Business Logic",
+      "severity": "High",
+      "severityLevel": 3,
+      "status": "triaged",
+      "statusLabel": "Triaged",
+      "method": "Flow Analysis · Token Tampering · Intercept Proxy",
+      "year": "2026"
+    }
+  ]
+}
