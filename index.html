@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arnav Pathi — Engineering Dashboard" />
+  <meta name="theme-color" content="#060708" />
+  <title>Arnav Pathi // Systems Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="grid-field" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-bracket">[</span>AP<span class="nav__logo-bracket">]</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#web" class="nav__link">Web</a></li>
+        <li><a href="#iot" class="nav__link">IoT Lab</a></li>
+        <li><a href="#security" class="nav__link">Security</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__status" aria-label="System status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="nav__status-text" id="nav-status-text">Initializing…</span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero__bg-lines" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__eyebrow">
+        <span class="mono hero__handle" id="hero-handle">@arnavpathi1472013-tech</span>
+        <div class="badge badge--active" id="hero-badge" aria-live="polite">
+          <span class="status-dot status-dot--sm" aria-hidden="true"></span>
+          <span id="hero-badge-text">System Status: Active · India</span>
+        </div>
+      </div>
+
+      <h1 class="hero__headline" id="hero-headline">
+        Building the Web.<br />
+        <em>Engineering</em> the Physical.<br />
+        <span class="hero__headline-dim">Securing the Future.</span>
+      </h1>
+
+      <p class="hero__sub" id="hero-sub">
+        Full-Stack Developer, IoT Engineer, and Security Researcher operating at the intersection of web systems, embedded hardware, and vulnerability research.
+      </p>
+
+      <div class="hero__chips" id="hero-chips" aria-label="Disciplines">
+        <span class="chip">Front-End Development</span>
+        <span class="chip__sep" aria-hidden="true"></span>
+        <span class="chip">IoT Engineering</span>
+        <span class="chip__sep" aria-hidden="true"></span>
+        <span class="chip">Security Research</span>
+      </div>
+
+      <div class="hero__stats" id="hero-stats" role="list" aria-label="Key stats">
+        <div class="stat" role="listitem">
+          <span class="stat__val">ESP<span class="stat__accent">32</span></span>
+          <span class="stat__label">Primary MCU</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat" role="listitem">
+          <span class="stat__val">H<span class="stat__accent">1</span></span>
+          <span class="stat__label">HackerOne</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat" role="listitem">
+          <span class="stat__val" id="stat-projects">—</span>
+          <span class="stat__label">Projects</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat" role="listitem">
+          <span class="stat__val" id="stat-findings">—</span>
+          <span class="stat__label">Findings</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="web" aria-labelledby="web-heading">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__meta">
+            <span class="section__num mono">01</span>
+            <span class="section__line" aria-hidden="true"></span>
+            <span class="section__tag mono">WEB DEVELOPMENT</span>
+          </div>
+          <h2 class="section__title" id="web-heading">Web Projects</h2>
+          <p class="section__sub">Front-end systems crafted with semantic HTML, modern CSS, and vanilla JavaScript.</p>
+        </div>
+        <div class="cards-grid" id="web-grid" role="list" aria-label="Web projects" aria-live="polite" aria-busy="true">
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div><div class="sk sk--tags"></div></div></div>
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div><div class="sk sk--tags"></div></div></div>
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div><div class="sk sk--tags"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule" aria-hidden="true"></div>
+
+    <section class="section section--alt" id="iot" aria-labelledby="iot-heading">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__meta">
+            <span class="section__num mono">02</span>
+            <span class="section__line" aria-hidden="true"></span>
+            <span class="section__tag mono">EMBEDDED SYSTEMS</span>
+          </div>
+          <h2 class="section__title" id="iot-heading">IoT &amp; Hardware Lab</h2>
+          <p class="section__sub">Firmware, sensors, and microcontrollers — where code meets the physical world.</p>
+        </div>
+        <div class="cards-grid cards-grid--iot" id="iot-grid" role="list" aria-label="IoT projects" aria-live="polite" aria-busy="true">
+          <div class="skeleton-card skeleton-card--iot" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--icon"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--tags"></div></div></div>
+          <div class="skeleton-card skeleton-card--iot" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--icon"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--tags"></div></div></div>
+          <div class="skeleton-card skeleton-card--iot" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--icon"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--tags"></div></div></div>
+          <div class="skeleton-card skeleton-card--iot" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--icon"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--tags"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule" aria-hidden="true"></div>
+
+    <section class="section" id="security" aria-labelledby="sec-heading">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__meta">
+            <span class="section__num mono">03</span>
+            <span class="section__line" aria-hidden="true"></span>
+            <span class="section__tag mono">VULNERABILITY RESEARCH</span>
+          </div>
+          <h2 class="section__title" id="sec-heading">Security &amp; Bug Hunting Log</h2>
+          <p class="section__sub">Documented findings from manual web application testing and CTF competitions.</p>
+        </div>
+        <div class="sec-grid" id="sec-grid" role="list" aria-label="Security findings" aria-live="polite" aria-busy="true">
+          <div class="skeleton-card skeleton-card--sec" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--line sk--short"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div></div></div>
+          <div class="skeleton-card skeleton-card--sec" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--line sk--short"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div></div></div>
+          <div class="skeleton-card skeleton-card--sec" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--line sk--short"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div></div></div>
+          <div class="skeleton-card skeleton-card--sec" aria-hidden="true"><div class="skeleton-card__inner"><div class="sk sk--line sk--short"></div><div class="sk sk--title"></div><div class="sk sk--line"></div><div class="sk sk--line sk--short"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__terminal">
+        <div class="terminal__bar" aria-hidden="true">
+          <span class="terminal__btn terminal__btn--r"></span>
+          <span class="terminal__btn terminal__btn--y"></span>
+          <span class="terminal__btn terminal__btn--g"></span>
+          <span class="terminal__bar-title mono">arnav@dev-workstation ~ zsh</span>
+        </div>
+        <div class="terminal__body" role="log">
+          <p class="terminal__line"><span class="t-prompt">➜ </span><span class="t-cmd">cat contact.json</span></p>
+          <p class="terminal__line t-out">→ github: <a class="t-link" id="footer-github" href="#" target="_blank" rel="noopener noreferrer">github.com/arnavpathi1472013-tech</a></p>
+          <p class="terminal__line t-out">→ bounty: <a class="t-link" id="footer-h1" href="#" target="_blank" rel="noopener noreferrer">hackerone.com/arnavpathi</a></p>
+          <p class="terminal__line t-out">→ email:  <a class="t-link" id="footer-email" href="#"><span class="__cf_email__" data-cfemail="67061509061127021f060a170b024904080a">[email&#160;protected]</span></a></p>
+          <p class="terminal__line t-out">→ status: <span class="t-green">ACTIVE</span> · location=<span id="footer-location">India</span> · timezone=IST+5:30</p>
+          <p class="terminal__line"><span class="t-prompt">➜ </span><span class="t-cursor" aria-hidden="true"></span></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy mono">&copy; 2026 <span id="footer-name">Arnav Pathi</span> · Vanilla JS · No Frameworks · Data from projects.json</p>
+        <p class="footer__sys mono">SYS: ONLINE · BUILD: STABLE · ENV: PRODUCTION</p>
